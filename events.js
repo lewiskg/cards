@@ -42,8 +42,6 @@ function writeCardToDOM (nodeToWrite) {
 
 function addListenersToDeleteButton() {
 	var delButtonId = `delete_${cardNumber}`; 
-	console.log(delButtonId);
-	console.log(document.getElementById(delButtonId));
 	document.getElementById(delButtonId).addEventListener('click', function(e){ deleteCard(e)});
 
 }
@@ -62,6 +60,3 @@ function deleteCard(e) {
 function clearInputField () {
 	document.getElementById("cardName").value = "";
 }
-
-
-
