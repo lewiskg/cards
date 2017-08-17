@@ -51,7 +51,7 @@ function addListenersToDeleteButton() {
 }
 
 
-// funtion to delete created div card
+// function to delete created div card
 function deleteCard(e) {
 	var divNode = e.currentTarget.parentNode;
 	console.log(divNode);
