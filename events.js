@@ -41,13 +41,11 @@ function writeCardToDOM (nodeToWrite) {
 
 
 function addListenersToDeleteButton() {
-	// array to hold delete buttons for each new created div
-	var delButtonArray = document.getElementsByClassName("deleteButton");
+	var delButtonId = `delete_${cardNumber}`; 
+	console.log(delButtonId);
+	console.log(document.getElementById(delButtonId));
+	document.getElementById(delButtonId).addEventListener('click', function(e){ deleteCard(e)});
 
-	// array to append event listener to all created delete buttons
-	for (var i = 0; i < delButtonArray.length; i++) {
-		document.getElementById(delButtonArray[i].id).addEventListener('click', function(e){ deleteCard(e)});
-	}
 }
 
 
