@@ -60,6 +60,3 @@ function deleteCard(e) {
 function clearInputField () {
 	document.getElementById("cardName").value = "";
 }
-
-
-
