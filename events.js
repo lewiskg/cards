@@ -25,8 +25,8 @@ function createDivCard(cardTitle) {
 	
 	// create internals for div element created above
 	// delete button contains a unique id number 
-	var txtNode     = `<h1>${cardTitle}</h1></div>`;
-	txtNode 	   += `<button type="button" id="delete_${cardNumber}" class="deleteButton">Delete Card</button>`
+	var txtNode = `<h1>${cardTitle}</h1></div>`;
+	txtNode += `<button type="button" id="delete_${cardNumber}" class="deleteButton">Delete Card</button>`;
 
 	// add internals to created div element
 	node.innerHTML  = txtNode;
