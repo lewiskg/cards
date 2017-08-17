@@ -24,12 +24,18 @@ function createDivCard(cardTitle) {
 	node.setAttribute('class', 'card');
 	
 	// create internals for div element created above
-	// delete button contains a unique id number 
-	var txtNode = `<h1>${cardTitle}</h1></div>`;
-	txtNode += `<button type="button" id="delete_${cardNumber}" class="deleteButton">Delete Card</button>`;
+	var childNode = document.createElement("h1");
+	childNode.innerHTML = `${cardTitle}`;
 
-	// add internals to created div element
-	node.innerHTML  = txtNode;
+	// delete button contains a unique id number 
+	var delButtonNode = document.createElement("button");
+	delButtonNode.setAttribute('id', `delete_${cardNumber}`);
+	delButtonNode.setAttribute('class', 'deleteButton');
+	delButtonNode.innerHTML = 'Delete Card';
+
+	// add elements to created div node
+	node.appendChild(childNode);
+	node.appendChild(delButtonNode);
 
 	return node;
 }
@@ -50,7 +56,6 @@ function addListenersToDeleteButton() {
 // function to delete created div card
 function deleteCard(e) {
 	var divNode = e.currentTarget.parentNode;
-	console.log(divNode);
 	var mainDivParent = document.getElementById("container");
 	mainDivParent.removeChild(divNode);
 }
