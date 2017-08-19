@@ -15,4 +15,6 @@ Requirements:
  	* function and variable names explain the flow of operations
  * index.html
  	* contains basic input field and create button
- 	* container divs to hold input and output elements 
+ 	* container divs to hold input and output elements
+ * events.css
+ 	* provides minimal styling to created div elements
