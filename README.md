@@ -13,6 +13,6 @@ Requirements:
  * events.js
  	* JS file is self-explanatory
  	* function and variable names explain the flow of operations
- * index.js
+ * index.html
  	* contains basic input field and create button
  	* container divs to hold input and output elements 
